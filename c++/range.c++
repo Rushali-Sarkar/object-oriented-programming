@@ -6,7 +6,7 @@ using namespace std;
 
 class Range {
 
-    private:
+    protected:
         int start;
         int end;
 
@@ -145,11 +145,6 @@ class Range {
 
 class ClosedRange: public Range {
 
-    private:
-
-        int start;
-        int end;
-
     public:
 
         ClosedRange() {
@@ -173,11 +168,6 @@ class ClosedRange: public Range {
 };
 
 class OpenRange: public Range {
-
-    private:
-
-        int start;
-        int end;
 
     public:
 
@@ -203,11 +193,6 @@ class OpenRange: public Range {
 
 class SemiOpenBegin: public Range {
 
-    private:
-
-        int start;
-        int end;
-
     public:
 
         SemiOpenBegin() {
@@ -232,11 +217,6 @@ class SemiOpenBegin: public Range {
 
 class SemiOpenEnd: public Range {
 
-    private:
-        
-        int start;
-        int end;
-
     public:
 
         SemiOpenEnd() {
@@ -258,5 +238,3 @@ class SemiOpenEnd: public Range {
             return "[" + to_string(this -> start) + ", " + to_string(this -> end + 1) + ")";
         }
 };
-
-
