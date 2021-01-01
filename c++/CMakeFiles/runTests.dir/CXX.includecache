@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/rushali/object-oriented-programming/c++/interval.h
+iostream
+-
+vector
+-
+string
+-
+
+/home/rushali/object-oriented-programming/c++/tests.c++
+gtest/gtest.h
+-
+interval.h
+/home/rushali/object-oriented-programming/c++/interval.h
+
